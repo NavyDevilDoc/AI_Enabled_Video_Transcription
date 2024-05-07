@@ -1,5 +1,5 @@
-It's amazing what a little inspiration can do for an idiot like me. This project came from a couple of comments I saw on LinkedIn and I figured this would be a good challenge to undertake. 
-Here's the core of what's going on with this repository:
+It's amazing what a little inspiration can do for an idiot like me. This project came from a couple of comments I saw on LinkedIn 
+and I figured this would be a good challenge to undertake. Here's the core of what's going on with this repository:
 
 1) Download a YouTube video
 2) Extract the audio
@@ -14,8 +14,12 @@ I ran into multiple issues building this. First, PyDub is kind of an asshole. He
 2) Put the /bin folder in your system path
 3) conda install -c conda-forge pydub
 
+Make sure to set your own file paths. I included plenty of print statements to help track progress. Further, if you don't have
+Ollama, you'll stick with a GPT LLM. I've had success with Llama3 7B and Gemma 2B models. Ollama is surprisingly easy to use, 
+so you know. Eventually, I'm going to dig into HuggingFace and it's Transformer models, but that'll wait for another day.
+
 Let me know if that doesn't work. I'm not sure how much help I can be, but I'll damn sure try. Whisper was kind of an asshole also. 
 There seem to be multiple ways to go about doing it, but the way I set up my code was the winning ticket. Although I used "base" in
-my model, there are more robust settings to use. As always, set your own environment variables and use your own damn API key. 
+my model, there are more robust settings to use. As always, set your environment variables and use your damn API key. 
 
 I'll check this again and make updates as needed. Until then, enjoy!
