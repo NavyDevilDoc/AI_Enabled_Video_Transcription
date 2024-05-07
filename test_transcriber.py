@@ -138,7 +138,7 @@ def format_text(input_text, n=100):
 
 
 # Load the environment variables and video link
-load_dotenv(r"C:\Users\jspri\Desktop\RAG_Model\env_variables.env")
+load_dotenv(your_path_here)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 YOUTUBE_VIDEO_SHORT = "https://www.youtube.com/watch?v=HQnPp9b7IOk&t=2s"
@@ -159,7 +159,7 @@ else:
 	
 	
 # Define the paths
-base_path = r"C:\Users\jspri\Desktop\RAG_Model"
+base_path = your_path_here
 
 '''
 print('Cleaning the folder...')
@@ -247,8 +247,5 @@ chain = (
 )
 
 # Run the chain and pass the question
-store_data = chain.invoke("Please give a detailed summary of the transcript. Include a breakdown of any pertient equations discussed.")
-# Format the text with n=100
-formatted_text = format_text(store_data, 100)
-# Print the formatted text
-print(formatted_text)
+store_data = chain.invoke(your_prompt_here)
+print(store_data)
